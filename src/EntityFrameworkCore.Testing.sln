@@ -6,17 +6,18 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F7DF11CE-7549-4808-B9BE-66CE1BD1F150}"
 	ProjectSection(SolutionItems) = preProject
 		..\.gitignore = ..\.gitignore
+		..\.github\workflows\continuous-integration-checks.yml = ..\.github\workflows\continuous-integration-checks.yml
+		..\efcore.snk = ..\efcore.snk
+		EntityFrameworkCore.Testing.Common\EntityFrameworkCore.Testing.Common.xml = EntityFrameworkCore.Testing.Common\EntityFrameworkCore.Testing.Common.xml
 		..\EntityFrameworkCore.Testing.Moq.nuspec = ..\EntityFrameworkCore.Testing.Moq.nuspec
+		EntityFrameworkCore.Testing.Moq\EntityFrameworkCore.Testing.Moq.xml = EntityFrameworkCore.Testing.Moq\EntityFrameworkCore.Testing.Moq.xml
 		..\EntityFrameworkCore.Testing.NSubstitute.nuspec = ..\EntityFrameworkCore.Testing.NSubstitute.nuspec
+		EntityFrameworkCore.Testing.NSubstitute\EntityFrameworkCore.Testing.NSubstitute.xml = EntityFrameworkCore.Testing.NSubstitute\EntityFrameworkCore.Testing.NSubstitute.xml
 		..\googlea6bd68d4a55b1e59.html = ..\googlea6bd68d4a55b1e59.html
 		..\LICENSE = ..\LICENSE
 		..\README.md = ..\README.md
-		..\TODO.md = ..\TODO.md
-		EntityFrameworkCore.Testing.Common\EntityFrameworkCore.Testing.Common.xml = EntityFrameworkCore.Testing.Common\EntityFrameworkCore.Testing.Common.xml
-		EntityFrameworkCore.Testing.Moq\EntityFrameworkCore.Testing.Moq.xml = EntityFrameworkCore.Testing.Moq\EntityFrameworkCore.Testing.Moq.xml
-		EntityFrameworkCore.Testing.NSubstitute\EntityFrameworkCore.Testing.NSubstitute.xml = EntityFrameworkCore.Testing.NSubstitute\EntityFrameworkCore.Testing.NSubstitute.xml
-		..\.github\workflows\continuous-integration-checks.yml = ..\.github\workflows\continuous-integration-checks.yml
 		..\.github\workflows\release.yml = ..\.github\workflows\release.yml
+		..\TODO.md = ..\TODO.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.Testing.Moq", "EntityFrameworkCore.Testing.Moq\EntityFrameworkCore.Testing.Moq.csproj", "{3A00A558-6614-4D2C-8BC0-A74EFBB8F844}"
