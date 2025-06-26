@@ -5,6 +5,10 @@
     <Authors>rgvlee</Authors>
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\eftesting.snk</AssemblyOriginatorKeyFile>
+    <PackageId>EntityFrameworkCore.Testing.Moq.Signed</PackageId>
+    <version>8.0.0</version>
+    <authors>rgvlee</authors>
+    <owners>rgvlee</owners>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
