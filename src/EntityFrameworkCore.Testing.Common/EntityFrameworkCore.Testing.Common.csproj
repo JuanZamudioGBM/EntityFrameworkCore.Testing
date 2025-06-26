@@ -5,7 +5,7 @@
     <Authors>rgvlee</Authors>
     <LangVersion>10</LangVersion>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>C:\Github\EntityFrameworkCore.Testing\eftesting.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\..\eftesting.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
