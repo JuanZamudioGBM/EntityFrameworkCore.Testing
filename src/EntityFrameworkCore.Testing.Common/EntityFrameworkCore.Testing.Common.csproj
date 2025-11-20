@@ -7,7 +7,7 @@
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\eftesting.snk</AssemblyOriginatorKeyFile>
     <PackageId>EntityFrameworkCore.Testing.Common.Signed</PackageId>
-    <version>8.0.0</version>
+    <version>8.1.2</version>
     <authors>rgvlee</authors>
     <owners>rgvlee</owners>
   </PropertyGroup>
@@ -24,9 +24,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.22" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.22" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.1" />
     <PackageReference Include="rgvlee.Core" Version="1.2.1" />
   </ItemGroup>
 
