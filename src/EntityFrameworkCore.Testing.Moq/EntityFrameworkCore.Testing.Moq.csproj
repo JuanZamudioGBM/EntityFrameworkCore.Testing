@@ -6,7 +6,7 @@
     <SignAssembly>True</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\eftesting.snk</AssemblyOriginatorKeyFile>
     <PackageId>EntityFrameworkCore.Testing.Moq.Signed</PackageId>
-    <version>8.1.2</version>
+    <version>8.1.3</version>
     <authors>rgvlee</authors>
     <owners>rgvlee</owners>
   </PropertyGroup>
