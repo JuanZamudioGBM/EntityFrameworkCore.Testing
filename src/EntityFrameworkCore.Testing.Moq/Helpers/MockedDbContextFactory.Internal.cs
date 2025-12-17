@@ -122,6 +122,14 @@ namespace EntityFrameworkCore.Testing.Moq.Helpers
             dependenciesMock.Setup(m => m.RelationalConnection).Returns(() => relationalConnection);
             //dependenciesMock.Setup(m => m.CoreOptions.IsConcurrencyDetectionEnabled).Returns(() => true);
             dependenciesMock.Setup(m => m.CoreOptions.AreThreadSafetyChecksEnabled).Returns(() => false);
+
+            var executionStrategy = new Mock<IExecutionStrategy>();
+            executionStrategy.Setup(m => m.Execute(
+                It.IsAny<DatabaseFacade>(),
+                It.IsAny<Func<DbContext, DatabaseFacade, IDbContextTransaction>>(),
+                It.IsAny<Func<DbContext, DatabaseFacade, ExecutionResult<IDbContextTransaction>>>()))
+                .Returns(() => Mock.Of<IDbContextTransaction>());
+            dependenciesMock.Setup(m => m.ExecutionStrategy).Returns(() => executionStrategy.Object);
             var dependencies = dependenciesMock.Object;
 
             var serviceProviderMock = new Mock<IServiceProvider>();
