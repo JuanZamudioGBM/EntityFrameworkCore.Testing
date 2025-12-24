@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 using EntityFrameworkCore.Testing.Common.Helpers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
@@ -129,6 +130,14 @@ namespace EntityFrameworkCore.Testing.Moq.Helpers
                 It.IsAny<Func<DbContext, DatabaseFacade, IDbContextTransaction>>(),
                 It.IsAny<Func<DbContext, DatabaseFacade, ExecutionResult<IDbContextTransaction>>>()))
                 .Returns(() => Mock.Of<IDbContextTransaction>());
+
+            executionStrategy.Setup(m => m.ExecuteAsync(
+                It.IsAny<DatabaseFacade>(),
+                It.IsAny<Func<DbContext, DatabaseFacade, CancellationToken, Task<IDbContextTransaction>>>(),
+                It.IsAny<Func<DbContext, DatabaseFacade, CancellationToken, Task<ExecutionResult<IDbContextTransaction>>>>(),
+                It.IsAny<CancellationToken>()))
+                .ReturnsAsync(() => Mock.Of<IDbContextTransaction>());
+
             dependenciesMock.Setup(m => m.ExecutionStrategy).Returns(() => executionStrategy.Object);
             var dependencies = dependenciesMock.Object;
 
